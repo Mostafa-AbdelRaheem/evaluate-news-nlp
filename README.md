@@ -3,7 +3,6 @@
 ---
 
 This project aims to build a web tool that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites by passing the url for this article.
-<br>
 
 # API
 
@@ -23,7 +22,7 @@ we can find the API [here](https://www.meaningcloud.com/products/sentiment-analy
 
 Create a new .env file in the root of your project.
 Fill the .env file with your API keys like this:
-API_KEY=************\*\*************
+API_KEY=****\*\*\*\*****\*\*****\*\*\*\*****
 
 # Installation
 
