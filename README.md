@@ -23,7 +23,7 @@ we can find the API [here](https://www.meaningcloud.com/developer/sentiment-anal
 Create a new .env file in the root of your project.
 Fill the .env file with your API keys like this:
 ```
-API_KEY=****\*\*\*\*****\*\*****\*\*\*\*****
+API_KEY=**********************
 ```
 # Installation
 
