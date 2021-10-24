@@ -16,14 +16,15 @@ we will be using the MeaningCloud Sentiment Analysis API .
 
 ### Step 1: Signup for an API key
 
-we can find the API [here](https://www.meaningcloud.com/products/sentiment-analysis). Once you create an account with MeaningCloud, you will be given a license key to start using the API.
+we can find the API [here](https://www.meaningcloud.com/developer/sentiment-analysis). Once you create an account with MeaningCloud, you will be given a license key to start using the API.
 
 ### Step 2: Environment Variables
 
 Create a new .env file in the root of your project.
 Fill the .env file with your API keys like this:
+```
 API_KEY=****\*\*\*\*****\*\*****\*\*\*\*****
-
+```
 # Installation
 
 ### Step 1: Make sure Node and npm are installed from the terminal.
