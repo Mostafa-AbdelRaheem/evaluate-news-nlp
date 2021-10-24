@@ -43,7 +43,7 @@ npm install
 
 ### Step 3: Start the Project in one of 2 modes
 
-#### production mode
+#### 1- production mode
 
 in this mode you need to
 1-start the serever:
@@ -60,7 +60,8 @@ npm run build-pro
 
 3- Open browser at http://localhost:8081/
 
-#### *Development mode
+
+#### 2- Development mode
 
 1-start the development node:
 
