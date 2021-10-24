@@ -33,10 +33,8 @@ module.exports = {
             filename: '[name].[contenthash].css' 
         }),
         new WorkboxPlugin.GenerateSW()
-        // TODO: configure workbox-webpack-plugin
     ],
     optimization: {
-        // TODO: Add Optimization for JS and CSS
         minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
     }
 }

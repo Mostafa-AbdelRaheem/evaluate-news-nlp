@@ -12,12 +12,12 @@ const post = async (url='',data={})=>{
         const res = await response.json()
         const result =res.sentence_list[0]
         console.log("result",result)
-        document.getElementById('text').innerHTML = result.text
-        document.getElementById('agreement').innerHTML = result.agreement
-        document.getElementById('subjectivity').innerHTML = result.subjectivity
-        document.getElementById('confidence').innerHTML = result.confidence
-        document.getElementById('irony').innerHTML = result.irony
-        document.getElementById('score_tag').innerHTML = result.score_tag
+        document.getElementById('text').innerHTML = `text: ${result.text}`; 
+        document.getElementById('agreement').innerHTML = `agreement: ${result.agreement}`
+        document.getElementById('subjectivity').innerHTML = `subjectivity${result.subjectivity}`
+        document.getElementById('confidence').innerHTML = `confidence${result.confidence}`
+        document.getElementById('irony').innerHTML = `irony${result.irony}`
+        document.getElementById('score_tag').innerHTML = `score_tag${result.score_tag}`
 
         return await response.json()
     }catch(error){
