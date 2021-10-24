@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sentient Analyzer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?&family=Roboto:wght@300;500;700&family=Roboto+Slab:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1aac26dbd0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="headerContainer"></div>
+      <h1>SENTIENT ANALYZER</h1>
+    </header>
+
+    <main>
+      <section>
+        <form class="" onsubmit="return Client.handleSubmit(event)">
+          <h3 class="">Analyze the sentiment of a text</h3>
+          <p>Enter a URL of an article / a blog to discover its sentiment.</p>
+          <input
+            class="textArea"
+            id="url"
+            type="text"
+            name="input"
+            value=""
+            placeholder="Enter Url for article"
+          />
+          <input
+            class="btn"
+            type="submit"
+            name=""
+            value="submit"
+            onclick="return Client.handleSubmit(event)"
+            onsubmit="return Client.handleSubmit(event)"
+          />
+        </form>
+      </section>
+
+      <section class="result">
+        <strong>Form Results:</strong>
+        <div id="text"></div>
+        <div id="agreement"></div>
+        <div id="subjectivity"></div>
+        <div id="confidence"></div>
+        <div id="irony"></div>
+        <div id="score_tag"></div>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-github-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      // Check that service workers are supported
+      if ("serviceWorker" in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+  </body>
+</html>

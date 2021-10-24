@@ -1,0 +1,38 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #545454;
+  border-radius: 3px;
+  padding: 40px;
+  height: 300px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.textArea {
+  height: 40px;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+
+  background-color: #2196f3;
+  color: white;
+  width: 30%;
+  height: 35px;
+  border-radius: 20px;
+  font-weight: bolder;
+  font-size: 20px;
+  &:hover {
+    background-color: white;
+    color: #2196f3;
+  }
+}
+
+.result {
+  text-align: center;
+}

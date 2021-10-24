@@ -1,0 +1,17 @@
+footer {
+  height: 60px;
+  background-color: #2196f3;
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+
+    li {
+      font-size: 35px;
+      padding: 0px 10px;
+      a {
+        color: white;
+      }
+    }
+  }
+}
