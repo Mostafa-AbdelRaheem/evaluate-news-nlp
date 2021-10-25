@@ -20,11 +20,9 @@ function handleSubmit(event) {
         })
         .then(function(data){
         const result =data
-        document.getElementById('text').innerHTML = `text: "${result.sentence_list[0].text}"`; 
         document.getElementById('agreement').innerHTML = `agreement: "${result.agreement}"`
         document.getElementById('subjectivity').innerHTML = `subjectivity: "${result.subjectivity}"`
         document.getElementById('confidence').innerHTML = `confidence: "${result.confidence}"`
-        document.getElementById('irony').innerHTML = `irony: "${result.irony}"`
         document.getElementById('score_tag').innerHTML = `score_tag: "${result.score_tag}"`
         })
     }else{
