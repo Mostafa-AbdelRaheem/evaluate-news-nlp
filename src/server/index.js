@@ -35,7 +35,7 @@ app.post('/addUrl',async(req,res)=>{
     const apiRespone=await fetch(apiUrl)
     try{
         const dataRecieved =await apiRespone.json()
-        console.log("dataRecieved",dataRecieved)
+        // console.log("dataRecieved",dataRecieved)
         res.send(dataRecieved)
     }catch(error){
         console.log("error",error.message)
