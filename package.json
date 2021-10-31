@@ -8,6 +8,11 @@
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
   },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!@ngrx|(?!deck.gl)|ng-dynamic)"
+    ]
+  },
   "keywords": [],
   "author": "PUT_YOUR_NAME_HERE",
   "description": "PUT_SMALL_DESCRIPTION_HERE",
