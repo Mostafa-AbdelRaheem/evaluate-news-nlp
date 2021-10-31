@@ -15,7 +15,7 @@ function handleSubmit(event) {
         }
         fetch('http://localhost:8081/addUrl',options)
         .then(res =>{
-            console.log("res receiend in formhandler",res)
+            // console.log("res receiend in formhandler",res)
             return res.json()
         })
         .then(function(data){
